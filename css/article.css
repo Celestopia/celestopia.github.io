@@ -1,0 +1,112 @@
+/* 左侧边栏，默认不可见 */
+.left-sidebar {
+  float: left;/*浮动方式-靠左*/
+  position: fixed;/*定位方式-固定*/
+  width: 15.00%;/*宽度*/
+  height: 400px;/*高度*/
+  margin: 20px;/*外边距*/
+  padding: 20px;/*内边距*/
+  background-color: rgba(240,240,240,0.8);/*背景颜色*/
+  color: rgba(0,0,0,1);/*字体颜色*/
+  border-style: none;/*边框样式*/
+  visibility: hidden;/*可见性-不可见*/
+}
+
+/* 内容区 */
+.main {
+  float: left;/*浮动方式-靠左*/
+  width: 70.00%;/*宽度*/
+  margin: 20px;/*外边距*/
+  padding: 20px;/*内边距*/
+}
+
+/* 右侧边栏，默认不可见 */
+.right-sidebar {
+  float: left;/*浮动方式-靠左*/
+  width: 15.00%;/*宽度*/
+  padding: 20px;/*内边距*/
+  margin: 20px;/*外边距*/
+  background-color: rgba(240,240,240,0.8);/*背景颜色*/
+  color: rgba(0,0,0,1);/*字体颜色*/
+  border-style: none;/*边框样式*/
+  visibility: hidden;/*可见性-不可见*/
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* 内容区域 - 卡片 */
+.card {
+  box-shadow: 2px 4px 8px 0px rgba(0,0,0,0.2);/*盒子阴影*/
+  transition: 0.1s;/*响应时间*/
+  border-radius: 5px;/*圆角半径*/
+  background-color: rgba(240,240,240,0.8);/*背景颜色*/
+  color: rgba(0,0,0,1);/*字体颜色*/
+  padding: 20px;/*内边距*/
+  margin: 20px;/*外边距*/
+}
+
+/* 内容区域 - 卡片 - 鼠标悬停状态 */
+.card:hover {
+  box-shadow: 4px 8px 16px 0px rgba(0,0,0,0.4);/*盒子阴影*/
+}
+
+/* 内容区域 - 卡片 - 一级标题 */
+.card h1 {
+  font-size: 32px;/*字体大小*/
+  font-weight: bold;/*字体粗细（normal, bold, bolder, lighter）*/
+  text-align: center;/*文本对齐方式*/
+}
+
+/* 内容区域 - 卡片 - 二级标题 */
+.card h2 {
+  font-size: 24px;/*字体大小*/
+  font-weight: bold;/*字体粗细（normal, bold, bolder, lighter）*/
+  text-align: left;/*文本对齐方式*/
+}
+
+/* 内容区域 - 卡片 - 内容 */
+.card p {
+  font-size: 18px;/*字体大小*/
+  font-weight: normal;/*字体粗细（normal, bold, bolder, lighter）*/
+  text-align: left;/*文本对齐方式*/
+}
+
+/* 内容区域 - 卡片 - 链接 */
+.card a {
+  font-size: 18px;/*字体大小*/
+  font-weight: normal;/*字体粗细（normal, bold, bolder, lighter）*/
+  text-align: left;/*文本对齐方式*/
+  color: rgba(0,0,192,1);/*字体颜色*/
+  text-decoration: none;/*字体装饰*/
+}
+
+/* 内容区域 - 卡片 - 链接 - 鼠标悬停状态 */
+.card a:hover {
+  color: rgba(192,0,192,1);/*字体颜色*/
+}
+
+/* 响应式布局 - 屏幕尺寸小于 800px 时，三列布局改为上下布局 */
+@media screen and (max-width: 800px) {
+    .left-sidebar, .main, .right-sidebar {
+      float: left;
+      width: 100%;
+      padding: 20px 20px;
+      position: static;/*定位方式*/
+    }
+  }
+
+
+
+
+
+
+
+
+
+
+
+

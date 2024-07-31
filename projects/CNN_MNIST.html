@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>测试版个人网站</title>
+<meta charset="utf-8"><!--字符集-->
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><!--页面视图-->
+<meta name="keywords" content="celestopia, profile, record"><!--页面关键词-->
+<meta name="description" content="测试版个人主页"><!--页面描述-->
+<meta name="author" content="Celestopia"><!--作者信息-->
+<meta http-equiv="refresh" content="300"><!--自动刷新时间-->
+<link rel="stylesheet" type="text/css" href="/css/basic.css"><!--样式表-->
+<link rel="stylesheet" type="text/css" href="/css/article.css"><!--样式表-->
+<link rel="stylesheet" type="text/css" href="/css/code.css"><!--样式表-->
+
+</head>
+
+<body>
+
+  <div class="background" style="background-image:url(/images/backgrounds/background8.jpg)">
+    <!--修改图片路径以改变背景图-->
+    <div class="topnav">
+      <a href="/index.html">About</a>
+      <a href="/blog.html">Blog</a>
+      <a href="/projects.html">Projects</a>
+      <a href="/fun.html">Fun</a>
+      <a href="/test.html">Others</a>
+    </div>
+
+    <div class="topnav", style="position:static">
+      <!--占位用-->
+    </div>
+  
+    <div class="header">
+      <h1><a href="/index.html">Celestopia</a></h1>
+      <p>A personal webpage (test)</p>
+    </div>
+    
+    <div class="row">
+
+      <div class="left-sidebar" style="visibility: hidden;"><!--将visibility改为visible以启用左侧边栏-->
+        <h2 style="text-align:center">相关链接</h2>
+        <p>占位</p>
+        <p>占位</p>
+        <p>占位</p>
+        <p>占位</p>
+      </div>
+
+      <div class="left-sidebar" style="position:static">
+        <!--占位用-->
+      </div>
+
+      <div class="main">
+
+        <div class="card">
+          <h1>CNN手写数字分类</h1>
+          <p>古早练手项目，使用卷积神经网络（CNN）对手写数字进行分类。</p>
+          <p>数据集：MNIST</p>
+        </div>
+
+        <div class="card">  
+          <div class="codeblock">
+            <pre>
+              <code>
+# 20240214
+%%capture --no-display 
+#disable unnecessary warnings
+%matplotlib inline
+import numpy as np
+import matplotlib.pyplot as plt
+import tensorflow as tf
+import keras
+              </code>
+            </pre>
+          </div>
+
+          <div class="codeblock">
+            <pre>
+              <code>
+(X_train, y_train), (X_test, y_test) = keras.datasets.mnist.load_data()
+X_train=X_train.reshape(60000,28,28,1)
+X_test=X_test.reshape(10000,28,28,1)
+
+X_train = X_train.astype('float32')
+X_test = X_test.astype('float32')
+X_train /= 255
+X_test /= 255
+y_train = keras.utils.to_categorical(y_train, 10)
+y_test = keras.utils.to_categorical(y_test, 10)
+
+print('X_train: ',X_train.shape)
+print('Y_train: ',y_train.shape)
+print('X_test:  ',X_test.shape)
+print('Y_test:  ',y_test.shape)
+              </code>
+            </pre>
+          </div>
+
+          <div class="codeblock">
+            <pre>
+              <code>
+CNN=keras.models.Sequential([
+  keras.layers.Conv2D(8, (3, 3), strides=(1, 1), padding='same', input_shape=(28,28,1)),
+  keras.layers.LeakyReLU(alpha=0.2),
+  #keras.layers.Activation('relu'),
+  keras.layers.MaxPooling2D(pool_size=(2, 2)),
+  
+  keras.layers.Conv2D(16, (3, 3), strides=(1, 1), padding='same'),
+  keras.layers.LeakyReLU(alpha=0.2),
+  #keras.layers.Activation('relu'),
+  keras.layers.MaxPooling2D(pool_size=(2,2)),
+  
+  keras.layers.Conv2D(32, (3, 3), strides=(1, 1), padding='valid'),
+  keras.layers.LeakyReLU(alpha=0.2),
+  #keras.layers.Activation('relu'),
+  
+  keras.layers.Flatten(),
+  keras.layers.Dense(64),
+  keras.layers.Dense(10),
+  keras.layers.Activation('softmax')
+])
+
+CNN.summary()
+              </code>
+            </pre>
+          </div>
+
+          <div class="codeblock">
+            <pre>
+              <code>
+CNN_batch_size=100
+CNN_epochs=10
+CNN.compile(loss='categorical_crossentropy',optimizer='adam',metrics=['accuracy'])
+CNN_history=CNN.fit(
+            X_train,y_train,
+            batch_size=CNN_batch_size,
+            shuffle=True,
+            epochs=CNN_epochs,
+            verbose=2,
+            validation_split=0.2
+           )
+              </code>
+            </pre>
+          </div>
+
+          <div class="codeblock">
+            <pre>
+              <code>
+plt.plot(CNN_history.history['loss'])
+plt.plot(CNN_history.history['val_loss'])
+plt.title('Model Loss')#图名
+plt.ylabel('MSE Loss')#纵坐标名
+plt.xlabel('Epoch')#横坐标名
+plt.legend(['Train', 'Validation'], loc='upper right')#角标及其位置
+plt.show()
+              </code>
+            </pre>
+          </div>
+
+          <div class="codeblock">
+            <pre>
+              <code>
+plt.plot(CNN_history.history['accuracy'])
+plt.plot(CNN_history.history['val_accuracy'])
+plt.title('Model accuracy')#图名
+plt.ylabel('Accuracy')#纵坐标名
+plt.xlabel('Epoch')#横坐标名
+plt.legend(['Train', 'Validation'], loc='upper right')#角标及其位置
+plt.axhline(y=0.98,c='r')
+plt.show()
+              </code>
+            </pre>
+          </div>
+
+          <div class="codeblock">
+            <pre>
+              <code>
+# Evaluate the model on the test data
+print("Evaluate on test data")
+results = CNN.evaluate(X_test, y_test, batch_size=20,verbose=2)
+print("Test loss", results[0])
+print("Test accuracy:", results[1])
+              </code>
+            </pre>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="right-sidebar" style="visibility: hidden;"><!--将visibility改为visible以启用右侧边栏-->
+        <h2 style="text-align:center">右侧边栏</h2>
+        <p>占位</p>
+        <p>占位</p>
+        <p>占位</p>
+        <p>占位</p>
+      </div>
+
+    </div>
+
+    <div class="footer">
+      <a href="https://space.bilibili.com/515547979">bilibili</a>
+    </div>
+
+  </div>
+
+</body>
+
+</html>
