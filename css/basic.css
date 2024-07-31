@@ -55,6 +55,7 @@ body {
 .background {
   width: 100%;
   min-height: 100vh;
+  position: relative;
   background-image: url('/images/backgrounds/background.jpg');/*默认背景*/
   background-repeat: no-repeat;
   background-size: cover;
@@ -128,6 +129,8 @@ body {
   padding: 10px;/*内边距*/
   background-color: rgba(64,64,64,1);/*背景颜色*/
   text-align: left;/*文本对齐方式-靠左*/
+  position: absolute;/*定位方式-绝对定位*/
+  bottom: 0;/*底部对齐*/
 }
 
 /* 底部样式 - 链接 */
