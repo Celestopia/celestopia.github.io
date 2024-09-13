@@ -4,40 +4,23 @@
 <title>测试版个人网站</title>
 <meta charset="utf-8"><!--字符集-->
 <meta name="viewport" content="width=device-width, initial-scale=1.0"><!--页面视图-->
-<meta name="keywords" content="celestopia, profile, record"><!--页面关键词-->
-<meta name="description" content="测试版个人主页"><!--页面描述-->
+<meta name="keywords" content="celestopia, personal website, test"><!--页面关键词-->
+<meta name="description" content="测试版个人网站"><!--页面描述-->
 <meta name="author" content="Celestopia"><!--作者信息-->
 <meta http-equiv="refresh" content="300"><!--自动刷新时间-->
+<link rel="icon" href="/media/icons/icon_32x32.png"><!--网站图标-->
 <link rel="stylesheet" type="text/css" href="/css/basic.css"><!--样式表-->
-<link rel="stylesheet" type="text/css" href="/css/article.css"><!--样式表-->
+<link rel="stylesheet" type="text/css" href="/css/article.css"><!--article样式表-->
 </head>
-
 <body>
-
-  <div class="background" style="background-image:url(/media/backgrounds/background3.jpg)">
-    <!--修改图片路径以改变背景图-->
-    <div class="topnav">
-      <a href="/index.html">About</a>
-      <a href="/blog.html">Blog</a>
-      <a href="/projects.html">Projects</a>
-      <a href="/fun.html">Fun</a>
-      <a href="/test.html">Others</a>
-    </div>
-
-    <div class="topnav", style="position:static">
-      <!--占位用-->
-    </div>
-  
-    <div class="header">
-      <h1><a href="/index.html">Celestopia</a></h1>
-      <p>A personal webpage (test)</p>
-    </div>
-    
+  <div class="background" style="background-image:url(/media/backgrounds/background.jpg)"><!--修改图片路径以改变背景图-->
+    <script type="text/javascript" src="/js/topnav_html_code.js"></script><!--导航栏-->
+    <script type="text/javascript" src="/js/header_html_code.js"></script><!--头部-->
 
     <div class="row">
 
       <div class="left-sidebar" style="visibility: hidden;"><!--将visibility改为visible以启用左侧边栏-->
-        <h2 style="text-align:center">相关链接</h2>
+        <h2 style="text-align:center">左侧边栏</h2>
         <p>占位</p>
         <p>占位</p>
         <p>占位</p>
@@ -49,8 +32,11 @@
       </div>
 
       <div class="main">
-
         <div class="card">
+          <!--以下为主体内容-->
+
+
+
           <h1>Blogs</h1>
           <p>这里是博客目录，欢迎来到我的博客！</p>
           <p>目前有一些测试性内容。</p>
@@ -62,6 +48,9 @@
                 <li><a href="/blogs/study/Probability Theory Notes.html">概率论课程笔记</a></li>
                 <li><a href="/blogs/study/工程热力学笔记.html">工程热力学课程笔记</a></li>
                 <li><a href="/blogs/study/流体力学笔记.html">流体力学课程笔记</a></li>
+                <li><a href="/blogs/study/RSA_mechanism.html">RSA加密算法</a></li>
+                <li><a href="/blogs/study/quick_power_algorithm.html">快速幂算法</a></li>
+                <li><a href="/blogs/study/md5.html">md5算法</a></li>
               </ul>
             </li>
             <li>生活
@@ -73,7 +62,11 @@
             </li>
           </ul>
           <p>不定期更新中...</p>
-        </div>
+
+          
+
+        <!--以上为主体内容-->
+          </div>
       </div>
 
       <div class="right-sidebar" style="visibility: hidden;"><!--将visibility改为visible以启用右侧边栏-->
@@ -84,14 +77,7 @@
         <p>占位</p>
       </div>
 
-    </div>
-
-    <div class="footer">
-      <a href="https://space.bilibili.com/515547979">bilibili</a>
-    </div>
-
+    <script type="text/javascript" src="/js/footer_html_code.js"></script><!--页脚-->
   </div>
-
 </body>
-
 </html>

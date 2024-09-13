@@ -1,40 +1,34 @@
 <!DOCTYPE html>
 <html>
-<head>
-<title>测试版个人网站</title>
-<meta charset="utf-8"><!--字符集-->
-<meta name="viewport" content="width=device-width, initial-scale=1.0"><!--页面视图-->
-<meta name="keywords" content="celestopia, profile, record"><!--页面关键词-->
-<meta name="description" content="测试版个人主页"><!--页面描述-->
-<meta name="author" content="Celestopia"><!--作者信息-->
-<meta http-equiv="refresh" content="300"><!--自动刷新时间-->
-<link rel="stylesheet" type="text/css" href="/css/basic.css"><!--样式表-->
-<link rel="stylesheet" type="text/css" href="/css/article.css"><!--样式表-->
-<link rel="stylesheet" type="text/css" href="/css/code.css"><!--样式表-->
 
+<head>
+  <title>测试版个人网站</title>
+  <meta charset="utf-8"><!--字符集-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"><!--页面视图-->
+  <meta name="keywords" content="celestopia, profile, record"><!--页面关键词-->
+  <meta name="description" content="测试版个人主页"><!--页面描述-->
+  <meta name="author" content="Celestopia"><!--作者信息-->
+  <meta http-equiv="refresh" content="300"><!--自动刷新时间-->
+  <link rel="stylesheet" type="text/css" href="/css/basic.css"><!--样式表-->
+  <link rel="stylesheet" type="text/css" href="/css/article.css"><!--article样式表-->
+  <link rel="stylesheet" type="text/css" href="/css/code.css"><!--code样式表-->
+  <!--引入Prism.js实现语法高亮-->
+  <link href="https://cdn.jsdelivr.net/npm/prismjs@1/themes/prism.css" rel="stylesheet" /><!--引入Prism.js的CSS主题文件-->
+  <script src="https://cdn.jsdelivr.net/npm/prismjs@1/prism.min.js"></script><!--引入Prism.js的JavaScript文件，用于代码高亮-->
+  <script src="https://cdn.jsdelivr.net/npm/prismjs@1/components/prism-python.min.js"></script><!--引入Python语言插件-->
+  <script>document.addEventListener('DOMContentLoaded', (event) => { Prism.highlightAll(); });</script>
+  <!--确保在DOM完全加载后再执行Prism.js的高亮代码-->
+  <!--引入MathJax显示数学公式-->
+  <script type="text/javascript" async
+    src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+  <script type="text/x-mathjax-config">MathJax.Hub.Config({tex2jax:{inlineMath:[['$','$'],['\$','\$']]},});</script>
 </head>
 
 <body>
+  <div class="background" style="background-image:url(/media/backgrounds/background.jpg)"><!--修改图片路径以改变背景图-->
+    <script type="text/javascript" src="/js/topnav_html_code.js"></script><!--导航栏-->
+    <script type="text/javascript" src="/js/header_html_code.js"></script><!--头部-->
 
-  <div class="background" style="background-image:url(/media/backgrounds/background8.jpg)">
-    <!--修改图片路径以改变背景图-->
-    <div class="topnav">
-      <a href="/index.html">About</a>
-      <a href="/blog.html">Blog</a>
-      <a href="/projects.html">Projects</a>
-      <a href="/fun.html">Fun</a>
-      <a href="/test.html">Others</a>
-    </div>
-
-    <div class="topnav", style="position:static">
-      <!--占位用-->
-    </div>
-  
-    <div class="header">
-      <h1><a href="/index.html">Celestopia</a></h1>
-      <p>A personal webpage (test)</p>
-    </div>
-    
     <div class="row">
 
       <div class="left-sidebar" style="visibility: hidden;"><!--将visibility改为visible以启用左侧边栏-->
@@ -50,33 +44,27 @@
       </div>
 
       <div class="main">
-
         <div class="card">
+          <!--以下为主体内容-->
+
+
+
           <h1>CNN手写数字分类</h1>
           <p>古早练手项目，使用卷积神经网络（CNN）对手写数字进行分类。</p>
           <p>数据集：MNIST</p>
+          <p>框架：keras</p>
         </div>
 
-        <div class="card">  
-          <div class="codeblock">
-            <pre>
-              <code>
-# 20240214
+        <div class="card">
+          <pre><code class="language-python"># 20240214
 %%capture --no-display 
 #disable unnecessary warnings
 %matplotlib inline
 import numpy as np
 import matplotlib.pyplot as plt
 import tensorflow as tf
-import keras
-              </code>
-            </pre>
-          </div>
-
-          <div class="codeblock">
-            <pre>
-              <code>
-(X_train, y_train), (X_test, y_test) = keras.datasets.mnist.load_data()
+import keras</code></pre>
+          <pre><code class="language-python">(X_train, y_train), (X_test, y_test) = keras.datasets.mnist.load_data()
 X_train=X_train.reshape(60000,28,28,1)
 X_test=X_test.reshape(10000,28,28,1)
 
@@ -91,13 +79,8 @@ print('X_train: ',X_train.shape)
 print('Y_train: ',y_train.shape)
 print('X_test:  ',X_test.shape)
 print('Y_test:  ',y_test.shape)
-              </code>
-            </pre>
-          </div>
-
-          <div class="codeblock">
-            <pre>
-              <code>
+              </code></pre>
+          <pre><code class="language-python">
 CNN=keras.models.Sequential([
   keras.layers.Conv2D(8, (3, 3), strides=(1, 1), padding='same', input_shape=(28,28,1)),
   keras.layers.LeakyReLU(alpha=0.2),
@@ -119,14 +102,8 @@ CNN=keras.models.Sequential([
   keras.layers.Activation('softmax')
 ])
 
-CNN.summary()
-              </code>
-            </pre>
-          </div>
-
-          <div class="codeblock">
-            <pre>
-              <code>
+CNN.summary()</code></pre>
+          <pre><code class="language-python">
 CNN_batch_size=100
 CNN_epochs=10
 CNN.compile(loss='categorical_crossentropy',optimizer='adam',metrics=['accuracy'])
@@ -138,27 +115,16 @@ CNN_history=CNN.fit(
             verbose=2,
             validation_split=0.2
            )
-              </code>
-            </pre>
-          </div>
-
-          <div class="codeblock">
-            <pre>
-              <code>
+              </code></pre>
+          <pre><code class="language-python">
 plt.plot(CNN_history.history['loss'])
 plt.plot(CNN_history.history['val_loss'])
 plt.title('Model Loss')#图名
 plt.ylabel('MSE Loss')#纵坐标名
 plt.xlabel('Epoch')#横坐标名
 plt.legend(['Train', 'Validation'], loc='upper right')#角标及其位置
-plt.show()
-              </code>
-            </pre>
-          </div>
-
-          <div class="codeblock">
-            <pre>
-              <code>
+plt.show()</code></pre>
+          <pre><code class="language-python">
 plt.plot(CNN_history.history['accuracy'])
 plt.plot(CNN_history.history['val_accuracy'])
 plt.title('Model accuracy')#图名
@@ -166,42 +132,28 @@ plt.ylabel('Accuracy')#纵坐标名
 plt.xlabel('Epoch')#横坐标名
 plt.legend(['Train', 'Validation'], loc='upper right')#角标及其位置
 plt.axhline(y=0.98,c='r')
-plt.show()
-              </code>
-            </pre>
-          </div>
-
-          <div class="codeblock">
-            <pre>
-              <code>
+plt.show()</code></pre>
+          <pre><code class="language-python">
 # Evaluate the model on the test data
 print("Evaluate on test data")
 results = CNN.evaluate(X_test, y_test, batch_size=20,verbose=2)
 print("Test loss", results[0])
-print("Test accuracy:", results[1])
-              </code>
-            </pre>
-          </div>
-        </div>
+print("Test accuracy:", results[1])</code></pre>
 
+        <!--以上为主体内容-->
       </div>
-
-      <div class="right-sidebar" style="visibility: hidden;"><!--将visibility改为visible以启用右侧边栏-->
-        <h2 style="text-align:center">右侧边栏</h2>
-        <p>占位</p>
-        <p>占位</p>
-        <p>占位</p>
-        <p>占位</p>
-      </div>
-
     </div>
 
-    <div class="footer">
-      <a href="https://space.bilibili.com/515547979">bilibili</a>
+    <div class="right-sidebar" style="visibility: hidden;"><!--将visibility改为visible以启用右侧边栏-->
+      <h2 style="text-align:center">右侧边栏</h2>
+      <p>占位</p>
+      <p>占位</p>
+      <p>占位</p>
+      <p>占位</p>
     </div>
 
+    <script type="text/javascript" src="/js/footer_html_code.js"></script><!--页脚-->
   </div>
-
 </body>
 
 </html>

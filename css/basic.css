@@ -7,7 +7,7 @@ html内元素嵌套关系为：
   - background
     - topnav
     - header
-    - main
+    - [main]
     - footer
 
 页面从上到下由顶部导航条（topnav）、头部（header）、主体（main）、底部（footer）四部分组成。
@@ -21,12 +21,12 @@ html内元素嵌套关系为：
 本CSS文件的代码风格规范为：
 1. 相邻层级缩进2个空格。
 2. 代码块之间加一个空行。
-3. 选择器与大括号之间加一空格，不换行。
+3. 选择器与左大括号之间加一空格，不换行。
 4. 英文冒号后加一空格。
 5. 每个声明语句结束都以分号+换行符结尾。
 6. 颜色值统一使用RGBA格式。
 7. 行后注释内不加空格。
-8. 行间注释内容与首尾间各加一个空格，汉字与间隔符间加一空格。
+8. 行间注释内容与首尾间各加一个空格；汉字与间隔符间加一空格。
 ...
 
 Copyright (c) 2024 @Celestopia
@@ -42,7 +42,7 @@ body {
   margin: 0;
   text-align: left;/*文本对齐方式*/
   text-indent: 0;/*文本缩进*/
-  font-family: Georgia, Times, "宋体", Arial, sans-serif;/*字体系列*/
+  font-family: Georgia, "华文中宋", "Times New Roman", "宋体", Arial, sans-serif;/*字体系列*/
   font-size: 18px;/*字体大小*/
   font-style: normal;/*字体风格（normal, italic, oblique）*/
   font-weight: normal;/*字体粗细（normal, bold, bolder, lighter）*/
@@ -56,7 +56,7 @@ body {
   width: 100%;
   min-height: 100vh;
   position: relative;
-  background-image: url('/images/backgrounds/background.jpg');/*默认背景*/
+  background-image: url('/media/backgrounds/background.jpg');/*默认背景*/
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
@@ -67,7 +67,7 @@ body {
 .topnav {
   overflow: hidden;/*内容溢出时的显示方式*/
   position: fixed;/*定位方式-固定在页面顶部*/
-  background-color:rgba(64,64,64,1);/*背景颜色*/
+  background-color:rgba(64,64,64,0.8);/*背景颜色*/
   height: 3em;
   width: 100%;
 }
@@ -141,6 +141,19 @@ body {
   text-decoration: none;/*文本装饰*/
   margin: 0;/*外边距*/
   padding: 0;/*内边距*/
+}
+
+/* 图片样式 */
+img {
+  max-width: 100%;/*图片最大宽度*/
+  height: auto;/*图片高度自适应*/
+}
+
+/* 列表样式 */
+ul {
+  margin: 0;/*外边距*/
+  padding: 20;/*内边距*/
+  line-height: 1.5em;/*行高*/
 }
 
 /*------------------------------------------------------------------*/

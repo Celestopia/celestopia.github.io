@@ -4,40 +4,37 @@
 <title>测试版个人网站</title>
 <meta charset="utf-8"><!--字符集-->
 <meta name="viewport" content="width=device-width, initial-scale=1.0"><!--页面视图-->
-<meta name="keywords" content="celestopia, profile, record"><!--页面关键词-->
-<meta name="description" content="测试版个人主页"><!--页面描述-->
+<meta name="keywords" content="celestopia, personal website, test"><!--页面关键词-->
+<meta name="description" content="测试版个人网站"><!--页面描述-->
 <meta name="author" content="Celestopia"><!--作者信息-->
 <meta http-equiv="refresh" content="300"><!--自动刷新时间-->
+<link rel="icon" href="/media/icons/icon_32x32.png"><!--网站图标-->
 <link rel="stylesheet" type="text/css" href="/css/basic.css"><!--样式表-->
-<link rel="stylesheet" type="text/css" href="/css/article.css"><!--样式表-->
+<link rel="stylesheet" type="text/css" href="/css/article.css"><!--article样式表-->
 </head>
 
 <body>
 
-  <div class="background" style="background-image:url(/media/backgrounds/background2.jpg)">
-    <!--修改图片路径以改变背景图-->
-    <div class="topnav">
-      <a href="/index.html">About</a>
-      <a href="/blog.html">Blog</a>
-      <a href="/projects.html">Projects</a>
-      <a href="/fun.html">Fun</a>
-      <a href="/test.html">Others</a>
-    </div>
-
-    <div class="topnav", style="position:static">
-      <!--占位用-->
-    </div>
+<script>// 遍历所有的 <a> 元素，并设置 target 属性为 _blank
+  document.addEventListener("DOMContentLoaded", function() {
+      // 获取所有的 <a> 元素
+      var links = document.querySelectorAll("a");
+      
+      // 遍历所有的 <a> 元素，并设置 target 属性为 _blank
+      links.forEach(function(link) {
+          link.setAttribute("target", "_blank");
+      });
+  });
+</script>
   
-    <div class="header">
-      <h1><a href="/index.html">Celestopia</a></h1>
-      <p>A personal webpage (test)</p>
-    </div>
-    
+  <div class="background" style="background-image:url(/media/backgrounds/background.jpg)"><!--修改图片路径以改变背景图-->
+    <script type="text/javascript" src="/js/topnav_html_code.js"></script><!--导航栏-->
+    <script type="text/javascript" src="/js/header_html_code.js"></script><!--头部-->
 
     <div class="row">
 
       <div class="left-sidebar" style="visibility: hidden;"><!--将visibility改为visible以启用左侧边栏-->
-        <h2 style="text-align:center">相关链接</h2>
+        <h2 style="text-align:center">左侧边栏</h2>
         <p>占位</p>
         <p>占位</p>
         <p>占位</p>
@@ -49,20 +46,89 @@
       </div>
 
       <div class="main">
-
         <div class="card">
+          <!--以下为主体内容-->
+
+
           <h1>Fun</h1>
           <p>这里会放一些我觉得有趣的内容。</p>
+          <p>暂时放一些外部链接，在遥远的未来或许会自己创作内容。</p>
           <ul>
-            <li><a href="#">1</a></li>
-            <li><a href="#">2</a></li>
-            <li><a href="#">3</a></li>
-            <li><a href="#">4</a></li>
-            <li><a href="#">5</a></li>
-            <li><a href="#">6</a></li>
+            <li>娱乐
+              <ul>
+                <li><a href="https://www.zhihu.com/question/660057641/answer/3548174319">知乎回答-怎么看待北大数学教授袁新意评论姜萍事件？</a></li>
+                <li><a href="https://www.zhihu.com/question/274996670/answer/534559958">知乎回答-中国古代旅行家最远抵达了哪里？中国人对于外部世界的认知究竟有多少？</a></li>
+                <li><a href="https://www.zhihu.com/question/501056222/answer/3542212057">知乎回答-如果汉朝二十四帝在九泉之下相见，汉高祖刘邦第一个想抽谁一巴掌？</a></li>
+                <li><a href="https://www.zhihu.com/question/382020486/answer/1213021816">知乎回答-大唐拿到一篇简化字文章，举国之力破解，他们能看懂吗？</a></li>
+                <li><a href="https://www.zhihu.com/question/448630016/answer/1773404028">知乎回答-如何评价清华大学《摸鱼学导论》这门课程？</a></li>
+                <li><a href="https://www.zhihu.com/question/339118484/answer/782839279">知乎回答-清华大学有哪些冷知识或者校园传说？</a></li>
+                <li><a href="https://www.zhihu.com/question/404023501/answer/3545353985">知乎回答-B站的表情是不是有点阴阳怪气了？-知乎阴阳表情</a></li>
+                <li><a href="https://www.zhihu.com/question/593353383/answer/2989666592">知乎回答-敢不敢按下Ctrl+V看看复制了什么？-原友发癫实录</a></li>
+                <li><a href="https://www.zhihu.com/question/593353383/answer/2988276760">知乎回答-敢不敢按下Ctrl+V看看复制了什么？-北京大学原神学院2023级培养方案</a></li>
+                <li><a href="https://www.zhihu.com/question/607624912">知乎问题-你做过最抽象的事情是什么？</a></li>
+                <li><a href="https://www.zhihu.com/question/19909094">知乎问题-有哪些好笑的关于程序员的笑话？</a></li>
+                <li><a href="https://www.zhihu.com/question/21747929">知乎问题-有哪些让你目瞪口呆的 Bug ？</a></li>
+                <li><a href="https://www.zhihu.com/question/268605958">知乎问题-你见过哪些结婚作死的行为？</a></li>
+                <li><a href="https://www.bilibili.com/video/BV1qq4y1V76f">B站视频-一个错误生成的MC世界，却如同仙境</a></li>
+                <li><a href="https://www.bilibili.com/video/BV1E7421d7MY">B站视频-离谱魔术《三条腿》，看了三遍也没认出来，到底哪条是假的？</a></li>
+                <li><a href="https://www.bilibili.com/video/BV14N4y117kh">B站视频-叫声版本合集来啦，来欣赏汤姆迷人的男高音吧</a></li>
+                <li><a href="https://www.bilibili.com/video/BV1Hm4y1M768">B站视频-《广 东 省 省 歌》</a></li>
+                <li><a href="https://www.bilibili.com/video/BV178411Y7QB">B站视频-鸡 你 太 美 官 方 M V</a></li>
+              </ul>
+            </li>
+            <li>技术
+              <ul>
+                <li><a href="https://zhuanlan.zhihu.com/p/685075176">知乎专栏-每天一个渗透（坐牢）小寄巧——快速破解目标计算机的Chrome浏览器保存密码</a></li>
+                <li><a href="https://www.zhihu.com/question/27432017">知乎问题-CSS有什么奇技淫巧？</a></li>
+                <li><a href="https://www.zhihu.com/question/27376156">知乎问题-Python有什么奇技淫巧？</a></li>
+                <li><a href="https://www.zhihu.com/question/548340950">知乎问题-为什么有些软件的默认安装路径是C:\Users\用户名\AppData\Roaming?</a></li>
+              </ul>
+            </li>
+            <li>资源共享网站
+              <ul>
+                <li><a href="https://thu-stat-wiki.github.io/">THU Stat Wiki</a></li>
+                <li><a href="https://in.closed.social:9443/pastExam/login/">华清大学课程攻略共享计划</a></li>
+                <li><a href="https://git.tsinghua.edu.cn/THUanonymous/bypass-thu-cst">清华大学计算机系学生自主学习资料共享库</a></li>
+                <li><a href="https://weyoung-learn.github.io/">未央学习</a></li>
+                <li><a href="https://feiyue.online/">清华大学飞跃手册</a></li>
+                <li><a href="https://zhuanlan.zhihu.com/p/28617379">知乎专栏-《一个大学生的日常笔记》目录</a></li>
+              </ul>
+            </li>
+            <li>个人博客
+              <ul>
+                <li><a href="https://freemind.pluskid.org/">Free Mind</a></li>
+                <li><a href="https://spaces.ac.cn/">科学空间</a></li>
+                <li><a href="https://liaoxuefeng.com/">廖雪峰的官方网站</a></li>
+                <li><a href="https://www.ruanyifeng.com/">阮一峰的个人网站</a></li>
+                <li><a href="https://sunboyallen.github.io/">sunboyallen</a></li>
+                <li><a href="https://learningrate1.com/">Learning_rate's Blog</a></li>
+                <li><a href="https://chias.blog/">Chia's Blog</a></li>
+                <li><a href="https://yfi.moe/">Yunfi</a></li>
+              </ul>
+            </li>
+            <li>工具
+              <ul>
+                <li><a href="https://www.freeconvert.com/zh/pdf-to-html">pdf转html</a></li>
+                <li><a href="https://smallpdf.com/">pdf编辑工具</a></li>
+                <li><a href="https://convert.freelrc.com/NCM-to-MP3">ncm转mp3</a></li>
+                <li><a href="https://cn.iloveocr.com/">图像OCR</a></li>
+                <li><a href="https://ezgif.com/maker">Animated GIF Maker</a></li>
+              </ul>
+            </li>
+            <li>其它
+              <ul>
+                <li><a href="https://www.zhihu.com/question/541828576">知乎问题-菲尔兹奖得主许埈珥从小沉迷写诗，24 岁才正式学数学，他的成功中最重要的是天赋、良师还是什么？</a></li>
+                <li><a href="https://www.zhihu.com/question/28209296">知乎问题-跟不爱的人结婚是种怎样的体验？</a></li>
+              </ul>
+            </li>
+
           </ul>
           <p>不定期更新中...</p>
-        </div>
+
+
+
+        <!--以上为主体内容-->
+          </div>
       </div>
 
       <div class="right-sidebar" style="visibility: hidden;"><!--将visibility改为visible以启用右侧边栏-->
@@ -73,14 +139,7 @@
         <p>占位</p>
       </div>
 
-    </div>
-
-    <div class="footer">
-      <a href="https://space.bilibili.com/515547979">bilibili</a>
-    </div>
-
+    <script type="text/javascript" src="/js/footer_html_code.js"></script><!--页脚-->
   </div>
-
 </body>
-
 </html>

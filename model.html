@@ -11,10 +11,18 @@
 <link rel="icon" href="/media/icons/icon_32x32.png"><!--网站图标-->
 <link rel="stylesheet" type="text/css" href="/css/basic.css"><!--样式表-->
 <link rel="stylesheet" type="text/css" href="/css/article.css"><!--article样式表-->
+<link rel="stylesheet" type="text/css" href="/css/code.css"><!--code样式表-->
+<!--引入Prism.js实现语法高亮-->
+<link href="https://cdn.jsdelivr.net/npm/prismjs@1/themes/prism.css" rel="stylesheet" /><!--引入Prism.js的CSS主题文件-->
+<script src="https://cdn.jsdelivr.net/npm/prismjs@1/prism.min.js"></script><!--引入Prism.js的JavaScript文件，用于代码高亮-->
+<script src="https://cdn.jsdelivr.net/npm/prismjs@1/components/prism-python.min.js"></script><!--引入Python语言插件-->
+<script>document.addEventListener('DOMContentLoaded',(event) =>{Prism.highlightAll();});</script><!--确保在DOM完全加载后再执行Prism.js的高亮代码-->
+<!--引入MathJax显示数学公式-->
+<script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+<script type="text/x-mathjax-config">MathJax.Hub.Config({tex2jax:{inlineMath:[['$','$'],['\$','\$']]},});</script>
 </head>
-
 <body>
-  <div class="background" style="background-image:url(/media/backgrounds/background011.jpg)"><!--修改图片路径以改变背景图-->
+  <div class="background" style="background-image:url(/media/backgrounds/background.jpg)"><!--修改图片路径以改变背景图-->
     <script type="text/javascript" src="/js/topnav_html_code.js"></script><!--导航栏-->
     <script type="text/javascript" src="/js/header_html_code.js"></script><!--头部-->
 
@@ -36,11 +44,7 @@
         <div class="card">
           <!--以下为主体内容-->
 
-
-
-          <h1>404 Not Found</h1>
-
-
+              <h1>网页模板</h1>
 
         <!--以上为主体内容-->
           </div>
