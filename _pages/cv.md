@@ -60,8 +60,9 @@ function toggleTooltip(element) {
 <ul>
     <li>
         <strong>Operational Quality Modeling of Civil Aircraft Based on Uncertainty Quantification</strong>
-        <div style="font-style: italic;">Supervisor: Xiaowei Yue, Department of Industrial Engineering<span style="float: right;">Oct. 2023 - Jul. 2024</span></div>
+        <div style="font-style: italic;">Supervisor: Xiaowei Yue, Department of Industrial Engineering<span style="float: right;">Oct. 2023 - Sept. 2024</span></div>
         <ul>
+            <li>Learned basic machine learning concepts and code operations.</li>
             <li>Developed time-series forecasting algorithms for flight data, implementing models such as CNN, LSTM, Transformer family, linear models, and other recent and hybrid approaches.</li>
             <li>Developed anomaly detection algorithms for data cleaning and wind shear detection, focusing on autoencoder-based models.</li>
             <li>Developed uncertainty quantification methods to model epistemic uncertainty of prediction, with a focus on Bayesian Neural Network.</li>
@@ -73,6 +74,14 @@ function toggleTooltip(element) {
         <ul>
             <li>Developing time-series forecasting algorithms to monitor boiler gas emissions, integrating both data-driven models and physical mechanisms.</li>
             <li>Developing an online platform with web front-end technology to display boiler gas emission data for environmental monitoring.</li>
+        </ul>
+    </li>
+    <li>
+        <strong>AI for Complex Network Science</strong>
+        <div style="font-style: italic;">Supervisor: Jingtao Ding, Department of Electronic Engineering<span style="float: right;">Nov. 2024 - Present</span></div>
+        <ul>
+            <li>Reproduced reinforcement learning control approaches like BC and BPPO on datasets like 1D burgers equation.</li>
+            <li>Developing finite time optimal control algorithms based on diffusion.</li>
         </ul>
     </li>
 </ul>
@@ -110,7 +119,7 @@ function toggleTooltip(element) {
     </li>
     <li>Member, Academic Department, Association of Science and Technology of Weiyang College <span style="float: right; font-style: italic;">Mar. 2024 - Dec. 2024</span>
         <ul>
-            <li>Give lectures of academic-related skills, e.g. MATLAB operations of probability and statistics, and Simulink usage.</li>
+            <li>Give lectures of useful academic-related skills, i.e., MATLAB operations in probability and statistics, Simulink operations, and personal webpage development.</li>
         </ul>
     </li>
 </ul>
