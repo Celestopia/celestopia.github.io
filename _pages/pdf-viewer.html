@@ -45,12 +45,10 @@ author_profile: true
     <iframe id="pdfFrame"></iframe>
 </div>
 <script>
-    // Get URL query parameter
     function getQueryParam(name) {
         const params = new URLSearchParams(window.location.search);
         return params.get(name);
     }
-    // Load PDF
     function loadPDF() {
         const pdfKey = getQueryParam('pdf');
         const loadingMsg = document.querySelector('.loading');
@@ -58,7 +56,5 @@ author_profile: true
         frame.onload = () => loadingMsg.style.display = 'none';
         frame.src = pdfKey;
     }
-    // Page loaded, execute
     window.onload = loadPDF;
-    
 </script>
