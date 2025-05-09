@@ -44,7 +44,7 @@ function toggleTooltip(element) {
 </script>
 
 
-<h2>Education</h2>
+<h2>EDUCATION</h2>
 <div class="tooltip" onclick="toggleTooltip(this)">
 <ul>
 <li>B.S. in Mathematics and Physics, Tsinghua University, 2022 - Present</li>
@@ -64,7 +64,7 @@ function toggleTooltip(element) {
         <ul>
             <li>Learned basic machine learning concepts and code operations.</li>
             <li>Developed time-series forecasting algorithms for flight data, implementing models such as CNN, LSTM, Transformer family, linear models, and other recent and hybrid approaches.</li>
-            <li>Developed anomaly detection algorithms for data cleaning and wind shear detection, focusing on autoencoder-based models.</li>
+            <li>Developed anomaly detection algorithms for data cleaning and wind shear detection, with a focus on autoencoder-based models.</li>
             <li>Developed uncertainty quantification methods to model epistemic uncertainty of prediction, with a focus on Bayesian Neural Network.</li>
         </ul>
     </li>
@@ -72,7 +72,8 @@ function toggleTooltip(element) {
         <strong>Development of Data-driven Soft Monitoring Technology for Energy-saving and Environmental Protection</strong>
         <div style="font-style: italic;">Supervisor: Yang Zhang, Department of Energy and Power Engineering<span style="float: right;">Jul. 2024 - Present</span></div>
         <ul>
-            <li>Developing time-series forecasting algorithms to monitor boiler gas emissions, integrating both data-driven models and physical mechanisms.</li>
+            <li>Developing time-series forecasting algorithms to monitor boiler gas emissions.</li>
+            <li>Developing customized algorithm for accurate prediction near environment protection policy thresholds.</li>
             <li>Developing an online platform with web front-end technology to display boiler gas emission data for environmental monitoring.</li>
         </ul>
     </li>
@@ -81,15 +82,25 @@ function toggleTooltip(element) {
         <div style="font-style: italic;">Supervisor: Jingtao Ding, Department of Electronic Engineering<span style="float: right;">Nov. 2024 - Present</span></div>
         <ul>
             <li>Reproduced reinforcement learning control approaches like BC and BPPO on datasets like 1D burgers equation.</li>
-            <li>Developing finite time optimal control algorithms based on diffusion.</li>
+            <li>Developing diffusion-based finite time optimal control algorithms.</li>
+            <li>Reproduced classic benchmarks in generative tasks, with a focus on Noise Conditional Score Matching (NCSN).</li>
+            <li>Developing PID-controlled Anneal Langevin Dynamics algorithm for faster sample generation.</li>
         </ul>
     </li>
 </ul>
 
 
+<h2>PUBLICATIONS</h2>
+
+<ul>
+<li><a href="https://arxiv.org/abs/2502.17893" title="Arxiv preprint">Arxiv - Sample-efficient diffusion-based control of complex nonlinear systems</a><br/>
+Hongyi Chen, Jingtao Ding, <strong>Jianhai Shu</strong>, Xinchun Yu, Xiaojun Liang, Yong Li, Xiao-Ping Zhang
+</li>
+</ul>
 
 
-<h2>Skills</h2>
+
+<h2>SKILLS</h2>
 <ul>
     <li>C++</li>
     <li>Python
@@ -112,14 +123,14 @@ function toggleTooltip(element) {
 
 <h2>CAMPUS EXPERIENCE</h2>
 <ul>
-    <li>Member, Student Right Department, Student Union of Weiyang College <span style="float: right; font-style: italic;">Mar. 2023 - Dec. 2023</span>
+    <li>Member, Student Right Department, <strong>Student Union of Weiyang College</strong><span style="float: right; font-style: italic;">Mar. 2023 - Dec. 2023</span>
         <ul>
-            <li>Help organize daily activities and events for the department, e.g. student festival.</li>
+            <li>Help organize daily activities and events for the department, e.g. annual student festival.</li>
         </ul>
     </li>
-    <li>Member, Academic Department, Association of Science and Technology of Weiyang College <span style="float: right; font-style: italic;">Mar. 2024 - Dec. 2024</span>
+    <li>Member, Academic Department, <strong>Association of Science and Technology of Weiyang College</strong><span style="float: right; font-style: italic;">Mar. 2024 - Dec. 2024</span>
         <ul>
-            <li>Give lectures of useful academic-related skills, i.e., MATLAB operations in probability and statistics, Simulink operations, and personal webpage development.</li>
+            <li>Design and give lectures of useful academic-related skills, i.e., MATLAB operations in probability and statistics, Simulink operations, and personal webpage development.</li>
         </ul>
     </li>
 </ul>
