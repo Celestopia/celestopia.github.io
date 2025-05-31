@@ -62,7 +62,6 @@ function toggleTooltip(element) {
         <strong>Operational Quality Modeling of Civil Aircraft Based on Uncertainty Quantification</strong>
         <div style="font-style: italic;">Supervisor: Xiaowei Yue, Department of Industrial Engineering<span style="float: right;">Oct. 2023 - Sept. 2024</span></div>
         <ul>
-            <li>Learned basic machine learning concepts and code operations.</li>
             <li>Developed time-series forecasting algorithms for flight data, implementing models such as CNN, LSTM, Transformer family, linear models, and other recent and hybrid approaches.</li>
             <li>Developed anomaly detection algorithms for data cleaning and wind shear detection, with a focus on autoencoder-based models.</li>
             <li>Developed uncertainty quantification methods to model epistemic uncertainty of prediction, with a focus on Bayesian Neural Network.</li>

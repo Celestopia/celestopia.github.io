@@ -15,8 +15,8 @@ main:
   - title: "Publications"
     url: /publications/
 
-  - title: "Notes"
-    url: /notes/
+  - title: "Resources"
+    url: /resources/
 
-  - title: "Portfolio"
-    url: /portfolio/
+#  - title: "Portfolio"
+#    url: /portfolio/

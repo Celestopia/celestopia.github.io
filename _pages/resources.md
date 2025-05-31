@@ -1,6 +1,6 @@
 ---
-title: "Notes"
-permalink: /notes/
+title: "Resources"
+permalink: /resources/
 ---
 
 <style>
@@ -58,6 +58,7 @@ A part of my notes as a study profile.
     </ul>
     <h2>Engineering Course Notes</h2>
     <ul>
+        <p>(in Chinese)</p>
         <li><a href="/_pages/pdf-viewer.html?pdf=/files/工程热力学笔记.pdf" class="pdf-link">Engineering Thermodynamics</a></li>
         <li><a href="/_pages/pdf-viewer.html?pdf=/files/流体力学笔记.pdf" class="pdf-link">Fluid Mechanics</a></li>
         <li><a href="/_pages/pdf-viewer.html?pdf=/files/传热学笔记.pdf" class="pdf-link">Heat Transfer</a></li>
