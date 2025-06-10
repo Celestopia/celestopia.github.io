@@ -40,6 +40,7 @@ A part of my notes as a study profile.
     <ul>
         <li><a href="/_pages/pdf-viewer.html?pdf=/files/Linear_Regression_Analysis_Notes.pdf" class="pdf-link">Linear Regression Analysis</a>⭐</li>
         <li><a href="/_pages/pdf-viewer.html?pdf=/files/Multivariate_Statistical_Analysis_Notes.pdf" class="pdf-link">Multivariate Statistical Analysis</a>⭐</li>
+        <li><a href="/_pages/pdf-viewer.html?pdf=/files/Time_Series_Analysis_Notes.pdf" class="pdf-link">Time Series Analysis</a>⭐</li>
     </ul>
     <h2>Paper Notes</h2>
     <ul>

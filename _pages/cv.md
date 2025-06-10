@@ -69,7 +69,7 @@ function toggleTooltip(element) {
     </li>
     <li>
         <strong>Development of Data-driven Soft Monitoring Technology for Energy-saving and Environmental Protection</strong>
-        <div style="font-style: italic;">Supervisor: Yang Zhang, Department of Energy and Power Engineering<span style="float: right;">Jul. 2024 - Present</span></div>
+        <div style="font-style: italic;">Supervisor: Yang Zhang, Department of Energy and Power Engineering<span style="float: right;">Jul. 2024 - May. 2025</span></div>
         <ul>
             <li>Developing time-series forecasting algorithms to monitor boiler gas emissions.</li>
             <li>Developing customized algorithm for accurate prediction near environment protection policy thresholds.</li>
@@ -92,9 +92,8 @@ function toggleTooltip(element) {
 <h2>PUBLICATIONS</h2>
 
 <ul>
-<li><a href="https://arxiv.org/abs/2502.17893" title="Arxiv preprint">Arxiv - Sample-efficient diffusion-based control of complex nonlinear systems</a><br/>
-Hongyi Chen, Jingtao Ding, <strong>Jianhai Shu</strong>, Xinchun Yu, Xiaojun Liang, Yong Li, Xiao-Ping Zhang
-</li>
+    <li><a href="https://arxiv.org/abs/2502.17893" title="Arxiv preprint">Arxiv - Sample-efficient Diffusion-based Control of Complex Nonlinear Systems</a><br/>Hongyi Chen, Jingtao Ding†, <strong>Jianhai Shu</strong>, Xinchun Yu, Xiaojun Liang, Yong Li, Xiao-Ping Zhang†</li>
+    <li>(Under review) PID-controlled Langevin Dynamics for Faster Sampling on Generative Models<br/>Hongyi Chen*, <strong>Jianhai Shu*</strong>, Jingtao Ding†, Yong Li, Xiao-Ping Zhang†</li>
 </ul>
 
 
