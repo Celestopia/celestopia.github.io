@@ -62,7 +62,7 @@ function toggleTooltip(element) {
         <strong>Operational Quality Modeling of Civil Aircraft Based on Uncertainty Quantification</strong>
         <div style="font-style: italic;">Supervisor: Xiaowei Yue, Department of Industrial Engineering<span style="float: right;">Oct. 2023 - Sept. 2024</span></div>
         <ul>
-            <li>Developed time-series forecasting algorithms for flight data, implementing models such as CNN, LSTM, Transformer family, linear models, and other recent and hybrid approaches.</li>
+            <li>Developed time-series forecasting algorithms for flight data, implementing models such as CNN, LSTM, Transformer-based models, linear models, and other recent/hybrid approaches.</li>
             <li>Developed anomaly detection algorithms for data cleaning and wind shear detection, with a focus on autoencoder-based models.</li>
             <li>Developed uncertainty quantification methods to model epistemic uncertainty of prediction, with a focus on Bayesian Neural Network.</li>
         </ul>
@@ -71,19 +71,19 @@ function toggleTooltip(element) {
         <strong>Development of Data-driven Soft Monitoring Technology for Energy-saving and Environmental Protection</strong>
         <div style="font-style: italic;">Supervisor: Yang Zhang, Department of Energy and Power Engineering<span style="float: right;">Jul. 2024 - May. 2025</span></div>
         <ul>
-            <li>Developing time-series forecasting algorithms to monitor boiler gas emissions.</li>
-            <li>Developing customized algorithm for accurate prediction near environment protection policy thresholds.</li>
-            <li>Developing an online platform with web front-end technology to display boiler gas emission data for environmental monitoring.</li>
+            <li>Developed time-series forecasting algorithms for boiler gas emission monitoring.</li>
+            <li>Developed customized algorithm for accurate prediction near environment protection policy thresholds.</li>
+            <li>Developed an online platform with web front-end technology to display boiler gas emission data for environmental monitoring.</li>
         </ul>
     </li>
     <li>
         <strong>AI for Complex Network Science</strong>
         <div style="font-style: italic;">Supervisor: Jingtao Ding, Department of Electronic Engineering<span style="float: right;">Nov. 2024 - Present</span></div>
         <ul>
-            <li>Reproduced reinforcement learning control approaches like BC and BPPO on datasets like 1D burgers equation.</li>
-            <li>Developing diffusion-based finite time optimal control algorithms.</li>
-            <li>Reproduced classic benchmarks in generative tasks, with a focus on Noise Conditional Score Matching (NCSN).</li>
-            <li>Developing PID-controlled Anneal Langevin Dynamics algorithm for faster sample generation.</li>
+            <li>Reproduced reinforcement learning control approaches like BC and BPPO on complex network datasets like 1D burgers equation and kuramoto oscillator.</li>
+            <li>Developed diffusion-based finite time optimal control algorithms.</li>
+            <li>Reproduced classic CV benchmarks in generative tasks, with a focus on Noise Conditional Score Matching (NCSN).</li>
+            <li>Developed PID-controlled Anneal Langevin Dynamics algorithm for efficient sampling of generative models.</li>
         </ul>
     </li>
 </ul>
@@ -92,7 +92,7 @@ function toggleTooltip(element) {
 <h2>PUBLICATIONS</h2>
 
 <ul>
-    <li><a href="https://arxiv.org/abs/2502.17893" title="Arxiv preprint">Arxiv - Sample-efficient Diffusion-based Control of Complex Nonlinear Systems</a><br/>Hongyi Chen, Jingtao Ding†, <strong>Jianhai Shu</strong>, Xinchun Yu, Xiaojun Liang, Yong Li, Xiao-Ping Zhang†</li>
+    <li><a href="https://arxiv.org/abs/2502.17893" title="Arxiv preprint">(Arxiv) Sample-efficient Diffusion-based Control of Complex Nonlinear Systems</a><br/>Hongyi Chen, Jingtao Ding†, <strong>Jianhai Shu</strong>, Xinchun Yu, Xiaojun Liang, Yong Li, Xiao-Ping Zhang†</li>
     <li>(Under review) PID-controlled Langevin Dynamics for Faster Sampling on Generative Models<br/>Hongyi Chen*, <strong>Jianhai Shu*</strong>, Jingtao Ding†, Yong Li, Xiao-Ping Zhang†</li>
 </ul>
 
@@ -103,20 +103,20 @@ function toggleTooltip(element) {
     <li>C++</li>
     <li>Python
         <ul>
-            <li>numpy/matplotlib/pandas</li>
-            <li>keras/tensorflow</li>
+            <li>numpy & matplotlib & pandas</li>
             <li>pytorch</li>
+            <li>keras/tensorflow</li>
             <li>scikit-learn</li>
         </ul>
     </li>
-    <li>MATLAB/Simulink</li>
+    <li>MATLAB & Simulink</li>
     <li>Web Front-End Development
         <ul>
-            <li>HTML/CSS/JavaScript</li>
+            <li>HTML & CSS & JavaScript</li>
             <li>Vue.js</li>
         </ul>
     </li>
-    <li>LaTeX</li>
+    <li>LaTeX & Beamer</li>
 </ul>
 
 <h2>CAMPUS EXPERIENCE</h2>

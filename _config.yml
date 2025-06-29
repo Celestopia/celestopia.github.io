@@ -21,9 +21,9 @@ repository               : "Celestopia/celestopia.github.io"
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
   # Biographic information
-  avatar           : "profile.png"
+  avatar           : "profile1.jpg"
   name             : "Jianhai Shu"
-  pronouns         : # example: "she/her"  
+  pronouns         : # example: "she/her"
   bio              : "Undergraduate student of Tsinghua University"
   location         : "Beijing, China"
   employer         : #

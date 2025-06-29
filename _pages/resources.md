@@ -33,19 +33,20 @@ permalink: /resources/
 
 {% include base_path %}
 
-A part of my notes as a study profile.
+A part of my notes as a study record.
 
 <div class="pdf-list">
     <h2>Course Notes</h2>
     <ul>
+        <li><a href="/_pages/pdf-viewer.html?pdf=/files/Time_Series_Analysis_Notes.pdf" class="pdf-link">Time Series Analysis</a>⭐</li>
         <li><a href="/_pages/pdf-viewer.html?pdf=/files/Linear_Regression_Analysis_Notes.pdf" class="pdf-link">Linear Regression Analysis</a>⭐</li>
         <li><a href="/_pages/pdf-viewer.html?pdf=/files/Multivariate_Statistical_Analysis_Notes.pdf" class="pdf-link">Multivariate Statistical Analysis</a>⭐</li>
-        <li><a href="/_pages/pdf-viewer.html?pdf=/files/Time_Series_Analysis_Notes.pdf" class="pdf-link">Time Series Analysis</a>⭐</li>
     </ul>
     <h2>Paper Notes</h2>
     <ul>
         <li><a href="/_pages/pdf-viewer.html?pdf=/files/DDPM.pdf" class="pdf-link">Denoising Diffusion Probabilistic Model</a>⭐</li>
-        <li><a href="/_pages/pdf-viewer.html?pdf=/files/ControlPrinciplesOfComplexSystems.pdf" class="pdf-link">Control Principles Of Complex Systems</a>⭐</li>
+        <li><a href="/_pages/pdf-viewer.html?pdf=/files/ControlPrinciplesOfComplexSystems.pdf" class="pdf-link">Control Principles Of Complex Systems</a></li>
+        <li><a href="/_pages/pdf-viewer.html?pdf=/files/Uncertainty_Quantification.pdf" class="pdf-link">A Survey of Uncertainty in Deep Neural Networks</a></li>
     </ul>
     <h2>Knowledge Collections</h2>
     <ul>
